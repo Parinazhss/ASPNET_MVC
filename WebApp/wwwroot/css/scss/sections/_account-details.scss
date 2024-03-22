@@ -1,0 +1,144 @@
+.account-details{
+ 
+    .container{
+        
+
+        .columns-container {
+            display: flex; /* Aktivera flexbox */
+            
+            .column-1{
+                display: flex; /* Använd flexbox */
+                flex-direction: column; /* Ställ in riktningen till kolumn */
+                 justify-content: center; /* Centrera vertikalt */
+                align-items: center; /* Centrera horisontellt */
+                 text-align: center; /* Justera texten till mitten */
+
+                 .buttons{
+                    margin-top: 15px;
+                    
+                    .btn-gray{
+                        width: 100%;
+                        margin-top: 10px;
+                      
+                    }
+                    
+
+                 }
+              }
+
+            .column-2{
+                margin-top: 20px;
+               padding-left: 20%;
+               display: flex;
+               flex-direction: column;
+
+               .buttons {
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+                .btn-gray{
+                    width: 20%;
+                    margin-top: 10px;
+                   
+                }
+                
+               
+            }
+
+                h5{
+                    color: blue;
+                }
+
+               .content{
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* Dela innehållet i två kolumner */
+                gap: 20px; 
+
+             
+                
+                
+
+                label {
+                    margin-bottom: 3px;
+                    font-weight: bold;
+
+                }
+
+                .input-group {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="password"],
+                    input[type="checkbox"] {
+                        width: 100%;
+                        padding: 10px;
+                        font-weight: bold;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+                    input[type="bio"]{
+                        width: 210%;
+                        padding: 50px;
+                        font-weight: bold;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+                }
+
+
+               } 
+
+               .content-2{
+                margin-top: 20px;
+                
+
+                label {
+                    margin-bottom: 3px;
+                    font-weight: bold;
+
+                }
+
+                .input-group {
+                    display: flex;
+                    flex-direction: column;
+
+                    
+                    
+                    input[type="add"]
+                     {
+                        width: 100%;
+                       padding: 5px;
+                        font-weight: bold;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+                 
+                    input[type="city"],
+                    input[type="postalcode"]{
+                        width: 50%;
+                       
+                        font-weight: bold;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        padding: 5px;
+              
+                    
+                    }
+
+                    
+
+                   
+                }
+
+
+               } 
+            }
+        }
+    }
+    
+}

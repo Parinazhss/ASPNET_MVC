@@ -1,0 +1,70 @@
+.signup {
+   
+
+    .container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center; /* Centrerar signup-formuläret horisontellt */
+         align-items: center; /* Centrerar signup-formuläret vertikalt */
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                .input-group {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+
+                    label {
+                        margin-bottom: 5px;
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="password"],
+                    input[type="checkbox"] {
+                        width: 120%;
+                        padding: 10px;
+                        font-size: 16px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+                }
+
+                .checkbox-group {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    input[type="checkbox"] {
+                        margin-right: 10px;
+                    }
+
+                    label {
+                        margin: 0;
+                    }
+                }
+
+                
+            }
+
+
+        }
+        button {
+                    width: 120%; /* Gör knappen mindre */
+                    padding: 8px 20px; /* Justera knappens padding efter behov */
+                    font-size: 14px; /* Justera knappens textstorlek efter behov */
+                    border: none;
+                    border-radius: 5px;
+                   
+                  
+
+                    
+                }
+    }
+}
