@@ -1232,48 +1232,52 @@ footer .container .social-media {
   background-color: #0056b3;
 }
 
-.signin {
+#signin {
   display: flex;
-  justify-content: center; /* Centrera innehållet horisontellt */
-  align-items: center; /* Centrera innehållet vertikalt */
-  height: 100vh; /* Gör sektionen lika hög som fönstret */
-  text-align: center;
-}
-.signin .container {
-  text-align: center;
-}
-.signin .container .here {
-  display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
-.signin .container label {
-  margin-right: 22%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+#signin .container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
 }
-.signin .container .btn-theme-s {
-  width: 30%;
-  margin-left: 35%;
+#signin .container form span {
+  color: red;
+  margin-left: 10px;
+}
+#signin .container .input-group label, #signin .container .checkbox-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+#signin .container .input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#signin .container .btn-theme-s {
+  width: 100%;
+}
+#signin .container #form-forgot-password {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  padding: 1rem 0;
+}
+#signin .container .checkbox-group {
+  display: flex;
+  align-items: center;
   margin-bottom: 15px;
 }
-.signin .container form {
-  display: flex;
-  flex-direction: column; /* Placera elementen under varandra */
-  align-items: center;
-  padding-top: 30px;
+#signin .container .checkbox-group input[type=checkbox] {
+  margin-right: 10px;
+  padding: 1rem;
 }
-.signin .container form h6 {
-  text-align: left;
-  margin-right: 24%;
-  margin-top: 30px;
-}
-.signin .container form input {
-  width: 30%; /* Ta upp hela bredden av formuläret */
-  border-color: transparent;
-  border: 1px solid gray;
-  padding: 5px;
-  border-radius: 5px 5px 5px 5px;
+#signin .container .checkbox-group label {
+  margin: 0;
 }
 
 .signup {

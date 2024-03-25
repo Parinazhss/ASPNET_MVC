@@ -1,59 +1,62 @@
-.signin{
+#signin {
     display: flex;
-    justify-content: center; /* Centrera innehållet horisontellt */
-    align-items: center; /* Centrera innehållet vertikalt */
-    height: 100vh; /* Gör sektionen lika hög som fönstret */
-    text-align: center;
-    
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 
-    .container{
-        text-align: center;
 
-        .here{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-        }
-         
-        label{
-            margin-right: 22%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-        }
-
-        .btn-theme-s{
-            width: 30%;
-            margin-left: 35%;
-            margin-bottom: 15px;
-        }
-
+    .container {
+        width: 100%;
+        max-width: 400px; // Bredden på formuläret
+        padding: 20px;
 
         form {
-            display: flex;
-            flex-direction: column; /* Placera elementen under varandra */
-            align-items: center; 
-            padding-top: 30px;
+            span {
+                color: red;
+                margin-left: 10px;
+            }
+        }
 
-            h6{
-                text-align: left;
-                margin-right: 24%;
-                margin-top: 30px;
+
+        .input-group label, .checkbox-group label {
+            display: block; // Placera labeln överst
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-theme-s {
+            width: 100%;
+        }
+
+        #form-forgot-password {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            input[type="checkbox"] {
+                margin-right: 10px;
+                padding: 1rem;
             }
 
-           input{
-                   
-                    width: 30%; /* Ta upp hela bredden av formuläret */
-                    border-color:transparent;
-                    border: 1px solid gray;
-                    padding: 5px;
-                    border-radius: 5px 5px 5px 5px ;
-                   
-           }
-            
-
-            
+            label {
+                margin: 0;
+            }
         }
     }
 }
-  
