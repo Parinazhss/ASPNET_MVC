@@ -1276,15 +1276,30 @@ footer .container .social-media {
   border-radius: 5px 5px 5px 5px;
 }
 
+.signup {
+  height: 100%;
+}
 .signup .container {
-  padding-top: 30px;
   display: flex;
   justify-content: center; /* Centrerar signup-formuläret horisontellt */
   align-items: center; /* Centrerar signup-formuläret vertikalt */
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .signup .container {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .signup .container {
+    width: 40%;
+  }
 }
 .signup .container form {
-  display: flex;
-  flex-direction: column;
+  padding: 1rem;
+}
+.signup .container form span {
+  color: red;
 }
 .signup .container form .content {
   display: flex;

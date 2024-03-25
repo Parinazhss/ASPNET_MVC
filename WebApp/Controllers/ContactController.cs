@@ -2,7 +2,7 @@
 
 namespace WebApp.Controllers
 {
-    public class SignupController : Controller
+    public class ContactController : Controller
     {
         public IActionResult Index()
         {

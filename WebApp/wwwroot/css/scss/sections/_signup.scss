@@ -1,15 +1,26 @@
 .signup {
-   
+    height: 100%;
 
     .container {
-        padding-top: 30px;
         display: flex;
         justify-content: center; /* Centrerar signup-formuläret horisontellt */
-         align-items: center; /* Centrerar signup-formuläret vertikalt */
+        align-items: center; /* Centrerar signup-formuläret vertikalt */
+        height: 100%;
+
+        @include lg {
+            width: 60%;
+        }
+
+        @include xl {
+            width: 40%;
+        }
 
         form {
-            display: flex;
-            flex-direction: column;
+            padding: 1rem;
+
+            span {
+                color: red;
+            }
 
             .content {
                 display: flex;
@@ -49,22 +60,15 @@
                         margin: 0;
                     }
                 }
-
-                
             }
-
-
         }
-        button {
-                    width: 120%; /* Gör knappen mindre */
-                    padding: 8px 20px; /* Justera knappens padding efter behov */
-                    font-size: 14px; /* Justera knappens textstorlek efter behov */
-                    border: none;
-                    border-radius: 5px;
-                   
-                  
 
-                    
-                }
+        button {
+            width: 120%; /* Gör knappen mindre */
+            padding: 8px 20px; /* Justera knappens padding efter behov */
+            font-size: 14px; /* Justera knappens textstorlek efter behov */
+            border: none;
+            border-radius: 5px;
+        }
     }
 }
