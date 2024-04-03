@@ -15,35 +15,35 @@
                 <div id="form-firstname" class="input-group">
                     <label asp-for="Form.FirstName">First Name</label>
                     <span asp-validation-for="Form.FirstName"></span>
-                    <input asp-for="Form.FirstName"    type="text" id="firstname" name="firstname" >
+                    <input asp-for="Form.FirstName"     >
                 </div>
 
                 <div id="form-lastname" class="input-group">
                     <label asp-for="Form.LastName">Last Name</label>
                     <span asp-validation-for="Form.LastName"></span>
-                    <input asp-for="Form.LastName" type="text" id="lastname" name="lastname">
+                    <input asp-for="Form.LastName" >
                 </div>
 
                 <div id="form-email" class="input-group">
                     <label asp-for="Form.Email">Email</label>
                     <span asp-validation-for="Form.Email"></span>
-                    <input asp-for="Form.Email" type="email" id="email" name="email" >
+                    <input asp-for="Form.Email"  />
                 </div>
 
                 <div id="form-password" class="input-group">
                     <label asp-for="Form.Password">Password</label>
                     <span asp-validation-for="Form.Password"></span>
-                    <input asp-for="Form.Password" type="password" id="password" name="password" >
+                    <input asp-for="Form.Password"  />
                 </div>
 
                 <div id="form-confirm" class="input-group">
                     <label asp-for="Form.ConfirmPassword">Confirm Password</label>
                     <span asp-validation-for="Form.ConfirmPassword"></span>
-                    <input asp-for="Form.ConfirmPassword"  type="password" id="confirm-password" name="confirm-password" required>
+                    <input asp-for="Form.ConfirmPassword"  />
                 </div>
 
                 <div id="form-terms" class="checkbox-group">
-                    <input asp-for="Form.TermsAndConditions"  type="checkbox" id="terms" name="terms" required>
+                    <input asp-for="Form.TermsAndConditions"  >
                     <label asp-for="Form.TermsAndConditions" >
                         I agree to the <a asp-controller="About" asp-action="Terms">Terms</a> & <a asp-controller="About" asp-action="Conditions">Conditions</a>.
                     </label>
@@ -56,4 +56,4 @@
     </div>
 </section>
 
-
+@await Html.PartialAsync("_ValidationScriptPartial")

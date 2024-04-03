@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using WebApp.Helper;
 
 namespace WebApp.Models;
 
@@ -16,14 +17,14 @@ public class SignUpModel
     [Display(Name = "Email Address", Prompt = "Enter your email address", Order = 2)]
     [DataType(DataType.EmailAddress)]
     [Required(ErrorMessage = "Email is required")]
-    [RegularExpression("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", ErrorMessage = "Invalid email address.")]
+    
     public string Email { get; set; } = null!;
 
 
     [Display(Name = "Password", Prompt = "Enter your password", Order = 3)]
     [DataType(DataType.Password)]
     [Required(ErrorMessage = "Password is required")]
-    [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%?&])[A-Za-z\\d@$!%?&]{8,}$", ErrorMessage = "Invalid Password")]
+    
     public string Password { get; set; } = null!;
 
 
@@ -40,9 +41,4 @@ public class SignUpModel
 
     [CheckBoxRequired(ErrorMessage = "You must accept the terms and conditions")]
     public bool TermsAndConditions { get; set; } = false;
-}
-public class CheckBoxRequired : ValidationAttribute
-{
-    public override bool IsValid(object? value) => value is bool b && b;
-
 }

@@ -10,4 +10,6 @@ public class HomeController : Controller
         ViewData["Title"] = "Ultimate Task Managment Assistant";
         return View();
     }
+    [Route("/error")]
+    public IActionResult Error404 (int statusCode) => View();
 }
